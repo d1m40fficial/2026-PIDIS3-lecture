@@ -353,6 +353,15 @@ export const edits = [
     ],
     to: [],
   },
+  {
+    // Здесь `n` — тот же признак узкого экрана, что и в кнопке результатов:
+    // без этой правки кнопка на телефоне есть, но окно самопроверки не открывается.
+    id: 'deck-results-dialog-always',
+    note: 'Показывать окно «Самопроверка» и на телефоне.',
+    file: 'lecture-engine.js',
+    from: ['!n && N === "results" && K && /* @__PURE__ */ w(r, {'],
+    to: ['N === "results" && K && /* @__PURE__ */ w(r, {'],
+  },
 ]
 
 export const ENGINE_DIR = new URL('../node_modules/@olgakraven/lecture-engine/lib/', import.meta.url)
