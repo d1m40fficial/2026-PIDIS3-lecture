@@ -322,6 +322,36 @@ export const edits = [
       'Q("Открыть содержание", /* @__PURE__ */ w(ue, { size: 19 }), () => {',
     ],
   },
+
+  // ── Карточки каталога: статус доступа по коду ──────────────────────────────
+  {
+    id: 'deck-card-access-import',
+    note: 'Импортировать компонент статуса доступа для карточек каталога.',
+    file: 'lecture-engine.js',
+    from: ['import { useLectureGate as pidisUseLectureGate } from "./access-runtime.js";'],
+    to: [
+      'import { useLectureGate as pidisUseLectureGate } from "./access-runtime.js";',
+      'import { LectureCardState as pidisLectureCardState } from "./access-runtime.js";',
+    ],
+  },
+  {
+    id: 'deck-card-access-state',
+    note: 'Карточка лекции: закрыта — «Доступ по коду» и «Ввести код», разблокирована — «Доступно» и «Открыть».',
+    file: 'lecture-engine.js',
+    from: [
+      'children: [/* @__PURE__ */ w("button", {',
+      'className: "button primary",',
+      'onClick: () => ke(t),',
+      'children: "Открыть"',
+      '})]',
+    ],
+    to: [
+      'children: [/* @__PURE__ */ w(pidisLectureCardState, {',
+      'lectureId: t.id,',
+      'onOpen: () => ke(t)',
+      '})]',
+    ],
+  },
 ]
 
 export const ENGINE_DIR = new URL('../node_modules/@olgakraven/lecture-engine/lib/', import.meta.url)

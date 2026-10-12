@@ -85,6 +85,11 @@ export function isLectureUnlocked(lectureId) {
   return Boolean(unlockedRecords()[lectureId])
 }
 
+/** Лекция закрыта кодом, если для неё в access-codes.json заданы хеши кодов. */
+export function lectureRequiresCode(lectureId) {
+  return (file?.lectures?.[lectureId] || []).length > 0
+}
+
 /** Отпечаток кода — четыре знака от SHA-256 введённого кода. */
 export function fingerprintOf(access, lectureId) {
   return unlockedRecords()[lectureId]?.fingerprint || '----'
@@ -97,10 +102,11 @@ export async function grantLecture(access, lectureId, code) {
   const store = unlockedRecords()
   store[lectureId] = { expiresAt: Date.now() + WEEK, fingerprint: hash.slice(0, 4) }
   writeStore(store)
+  notifyAccessChanged()
   return true
 }
 
-/** Мастер-код снимает доступ и сохранённое ФИО на устройстве. */
+/** Мастер-код снимает привязку к устройству: все лекции блокируются заново, сохранённое ФИО стирается. Он не открывает лекцию. */
 export async function releaseAccess(access, code) {
   if (!access?.releaseHash) return false
   if ((await sha256Hex(normalizeCode(code))) !== access.releaseHash) return false
@@ -110,7 +116,66 @@ export async function releaseAccess(access, code) {
   } catch {
     /* ничего */
   }
+  notifyAccessChanged()
   return true
+}
+
+function notifyAccessChanged() {
+  try {
+    window.dispatchEvent(new Event('pidis3:access-changed'))
+  } catch {
+    /* Node или среда без window */
+  }
+}
+
+// ── Статус доступа на карточке лекции ──────────────────────────────────────
+
+/**
+ * Надпись и кнопка карточки в каталоге. Закрытая лекция: «Доступ по коду» и
+ * «Ввести код»; разблокированная: «Доступно» и «Открыть». Компонент сам следит
+ * за разблокировкой (в том числе после возврата из лекции) и за сбросом
+ * мастер-кодом.
+ */
+export function LectureCardState({ lectureId, onOpen }) {
+  const [stamp, setStamp] = useState(0)
+
+  useEffect(() => {
+    let alive = true
+    loadAccessFile().then(() => {
+      if (alive) setStamp((n) => n + 1)
+    })
+    const bump = () => setStamp((n) => n + 1)
+    try {
+      window.addEventListener('pidis3:access-changed', bump)
+      window.addEventListener('storage', bump)
+    } catch {
+      /* Node */
+    }
+    return () => {
+      alive = false
+      try {
+        window.removeEventListener('pidis3:access-changed', bump)
+        window.removeEventListener('storage', bump)
+      } catch {
+        /* Node */
+      }
+    }
+  }, [])
+
+  if (!lectureRequiresCode(lectureId)) {
+    return h('button', { className: 'button primary', type: 'button', onClick: onOpen }, 'Открыть')
+  }
+  const unlocked = isLectureUnlocked(lectureId)
+  return h(
+    Fragment,
+    null,
+    h(
+      'span',
+      { className: unlocked ? 'topic-card-access available' : 'topic-card-access' },
+      unlocked ? 'Доступно' : 'Доступ по коду',
+    ),
+    h('button', { className: 'button primary', type: 'button', onClick: onOpen }, unlocked ? 'Открыть' : 'Ввести код'),
+  )
 }
 
 export function readIdentity() {
@@ -183,7 +248,7 @@ export function useLectureGate(lectureId) {
     ? h(GateDialog, {
         lectureId,
         onUnlock: () => setState({ ready: true, locked: false }),
-        onRelease: () => setState({ ready: true, locked: false }),
+        onRelease: () => setState({ ready: true, locked: true }),
       })
     : null
 
