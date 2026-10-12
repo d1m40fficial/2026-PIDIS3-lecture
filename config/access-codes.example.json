@@ -1,0 +1,84 @@
+{
+  "secret": "СТРОКА-НЕ-КОРОЧЕ-32-СИМВОЛОВ-ЗАМЕНИТЕ-СВОЮ",
+  "releaseCode": "МАСТЕР-КОД-ЗАМЕНИТЕ-СВОЙ",
+  "lectures": {
+    "01-project-decisions": [
+      "КОД-ЛЕКЦИИ-01"
+    ],
+    "02-roles-views": [
+      "КОД-ЛЕКЦИИ-02"
+    ],
+    "03-artifact-map": [
+      "КОД-ЛЕКЦИИ-03"
+    ],
+    "04-requirement-sources": [
+      "КОД-ЛЕКЦИИ-04"
+    ],
+    "05-interview-technique": [
+      "КОД-ЛЕКЦИИ-05"
+    ],
+    "06-requirement-classes": [
+      "КОД-ЛЕКЦИИ-06"
+    ],
+    "07-requirement-quality": [
+      "КОД-ЛЕКЦИИ-07"
+    ],
+    "08-user-story-acceptance": [
+      "КОД-ЛЕКЦИИ-08"
+    ],
+    "09-assumptions-traceability": [
+      "КОД-ЛЕКЦИИ-09"
+    ],
+    "10-entity-candidates": [
+      "КОД-ЛЕКЦИИ-10"
+    ],
+    "11-project-glossary": [
+      "КОД-ЛЕКЦИИ-11"
+    ],
+    "12-business-rules": [
+      "КОД-ЛЕКЦИИ-12"
+    ],
+    "13-attribute-composition": [
+      "КОД-ЛЕКЦИИ-13"
+    ],
+    "14-data-history": [
+      "КОД-ЛЕКЦИИ-14"
+    ],
+    "15-model-revision": [
+      "КОД-ЛЕКЦИИ-15"
+    ],
+    "16-decision-matrix": [
+      "КОД-ЛЕКЦИИ-16"
+    ],
+    "17-adr": [
+      "КОД-ЛЕКЦИИ-17"
+    ],
+    "18-nfr-impact": [
+      "КОД-ЛЕКЦИИ-18"
+    ],
+    "19-defense": [
+      "КОД-ЛЕКЦИИ-19"
+    ],
+    "20-ux-goals": [
+      "КОД-ЛЕКЦИИ-20"
+    ],
+    "21-information-architecture": [
+      "КОД-ЛЕКЦИИ-21"
+    ],
+    "22-wireframe-prototype": [
+      "КОД-ЛЕКЦИИ-22"
+    ],
+    "23-forms-validation-states": [
+      "КОД-ЛЕКЦИИ-23"
+    ],
+    "24-design-system-accessibility": [
+      "КОД-ЛЕКЦИИ-24"
+    ],
+    "25-rbac": [
+      "КОД-ЛЕКЦИИ-25"
+    ],
+    "26-auth-lockout": [
+      "КОД-ЛЕКЦИИ-26"
+    ]
+  }
+}

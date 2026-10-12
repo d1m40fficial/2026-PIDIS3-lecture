@@ -46,3 +46,8 @@ outputs/
 output/
 node_modules/
 dist/
+
+# коды доступа преподавателя: не публикуются
+config/access-codes.json
+config/access-codes.txt
+/access-codes.txt

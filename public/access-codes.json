@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "courseId": "pisid3",
+  "contentVersion": "pisid3-2026.09.21-visuals-v3",
+  "certificateKey": "bafd23c7eab29932889234d6c606ff8abc8390d6dc40dbd59ae1c13859e21c4b",
+  "releaseHash": "1108ea6dedcc1e313ade61be0b1c6e4882e46b5b59635f2b31896e49bdc095fc",
+  "lectures": {
+    "01-project-decisions": [
+      "bfdddb14cd87b0e5e31a190efc2b28d124f6e67f7252e6bca89be71c0ac06bb8"
+    ],
+    "02-roles-views": [
+      "ab571533a0b7459d0b921b983208983efd1cdaa6e87c15ebb7afad30c636f3b1"
+    ],
+    "03-artifact-map": [
+      "f4c9cd7d0aa1c8c83bae81ecfe02fed143bc4c3414d6c5ed1a89294032dac28d"
+    ],
+    "04-requirement-sources": [
+      "677a48cd0ed511e3747f2611082f2137cb5bf82a44ba6f3e328d53cf4881c5d4"
+    ],
+    "05-interview-technique": [
+      "a29c920d27051f16236e3d667fa60cc6437d468aa16323c2461bb60da6d7bd31"
+    ],
+    "06-requirement-classes": [
+      "e232ed75ab470e4cc727491756623bf41a418c440c60049e0b2be14fb152f882"
+    ],
+    "07-requirement-quality": [
+      "b930c3095acff2f71a4959851170799d3afabfc69dbbe19d70bf4fa02a7bf850"
+    ],
+    "08-user-story-acceptance": [
+      "6d7ccd8bfb939fea781984c0e809556ebe8790aa559b12d0e9939efe0a102bed"
+    ],
+    "09-assumptions-traceability": [
+      "c1fa07efdbcb3d768431912ad0d5f8125b9cd369a72388caba36a104b2b5c6a1"
+    ],
+    "10-entity-candidates": [
+      "4f3b2e498c97ba531b5848e8200bb32379fbd5469f3033b117b11c4383cbd03f"
+    ],
+    "11-project-glossary": [
+      "0c948148125c73145d1eca77f3872ef88efc7137da7b2f750dd7222501481f79"
+    ],
+    "12-business-rules": [
+      "9a4e500d9f6c274d1606f866e724f1bd903786dce281f81322c417ae5aa96503"
+    ],
+    "13-attribute-composition": [
+      "4e9046c8be655c77e78527d4fce1b88df347a261510b350c3c4aa0f9b672dec4"
+    ],
+    "14-data-history": [
+      "b295c39bc53529deca3b7d77b3c5085711626e1815e776fbfd3820365d3c189a"
+    ],
+    "15-model-revision": [
+      "0844cd3eb7a33e805012d2415631294a2a1f5bce9c42cb70b1489860912e9d8f"
+    ],
+    "16-decision-matrix": [
+      "98f08e38ced10c5e6f5befbbbe482dbad212bca18c47760583bd6bd7c730c18d"
+    ],
+    "17-adr": [
+      "c8409a75d9c2fccd19bf6111af5c0102145df32418df281bf4a5f603729924b3"
+    ],
+    "18-nfr-impact": [
+      "2bbc583e4d7e8b979a5e380b830568e049b2e2a8773ab1a91cb78f67187faad3"
+    ],
+    "19-defense": [
+      "14dca76c3757daaa8f9497b7ddd711e1e196e27853b8e8b1b336a5785f6633c9"
+    ],
+    "20-ux-goals": [
+      "17664507bd9b3b99391544b453b2c8359413216914bdcab8452252d0908a44f8"
+    ],
+    "21-information-architecture": [
+      "e65ab26664110e7e236b29f843e693caa18036b6d553dbda5e758ecdd033b5b0"
+    ],
+    "22-wireframe-prototype": [
+      "501f303a4caa6da767e0956f021b3f36d4d26af6963b089378db954d1809d013"
+    ],
+    "23-forms-validation-states": [
+      "5c122289595674b9a98874d0ea5b269e660803d7e3d01a253b66da97a698f831"
+    ],
+    "24-design-system-accessibility": [
+      "0a2dab20787898c6ec8d1980b912d28f7eb2ff200827288502a26c3a1f655553"
+    ],
+    "25-rbac": [
+      "7e9f0bf540751fd7415c56babf52ee6123efb46ae0ff89b5dbd56c0b2ced81ae"
+    ],
+    "26-auth-lockout": [
+      "d09c17769760f8a8496397631cf5688acf55dd6a0ba2a8b8659cdcc78070aea5"
+    ]
+  }
+}

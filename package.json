@@ -7,6 +7,9 @@
     "node": ">=22.18.0"
   },
   "scripts": {
+    "postinstall": "node scripts/apply-engine-patches.mjs",
+    "engine:patch": "node scripts/apply-engine-patches.mjs",
+    "engine:check": "node scripts/check-engine-patches.mjs",
     "dev": "vite --host 127.0.0.1",
     "preview": "vite preview --host 127.0.0.1",
     "generate:content": "node scripts/generate-content.mjs",
@@ -14,7 +17,9 @@
     "check:readiness": "node scripts/readiness.mjs",
     "typecheck": "tsc --noEmit",
     "lint": "oxlint src scripts",
-    "build": "npm run validate:content && tsc --noEmit && vite build && node scripts/build-offline.mjs",
+    "compile:access": "node scripts/compile-access-codes.mjs",
+    "verify:certificate": "node scripts/verify-certificate.mjs",
+    "build": "npm run engine:check && npm run validate:content && npm run compile:access && tsc --noEmit && vite build && node scripts/build-offline.mjs",
     "build:pages": "npm run build",
     "check:privacy": "node scripts/check-privacy.mjs",
     "export:pdf": "node scripts/export-pdf.mjs",
@@ -23,7 +28,6 @@
     "audit:content": "node scripts/review-content.mjs",
     "check:methodology": "node scripts/check-methodology.mjs",
     "check:generated": "node scripts/check-generated.mjs",
-    "test:tour": "node scripts/check-tour.mjs",
     "test:visuals": "node scripts/check-visuals.mjs"
   },
   "dependencies": {

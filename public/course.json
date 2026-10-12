@@ -3914,26 +3914,6 @@
           "body": "Стадии создания ИС, артефакты и ответственность проектировщика за обоснованный выбор."
         },
         {
-          "id": "01-project-decisions-main-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Основная литература",
-          "readingGroup": "primary"
-        },
-        {
-          "id": "01-project-decisions-additional-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Дополнительная литература",
-          "readingGroup": "additional"
-        },
-        {
-          "id": "01-project-decisions-materials",
-          "kicker": "Папка третьего курса",
-          "kind": "materials",
-          "title": "Материалы к занятиям"
-        },
-        {
           "id": "01-project-decisions-route",
           "kicker": "Маршрут занятия",
           "kind": "agenda",
@@ -5086,26 +5066,6 @@
           "body": "Заказчик, пользователь, аналитик, проектировщик и разработчик: интересы, конфликты и право решения."
         },
         {
-          "id": "02-roles-views-main-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Основная литература",
-          "readingGroup": "primary"
-        },
-        {
-          "id": "02-roles-views-additional-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Дополнительная литература",
-          "readingGroup": "additional"
-        },
-        {
-          "id": "02-roles-views-materials",
-          "kicker": "Папка третьего курса",
-          "kind": "materials",
-          "title": "Материалы к занятиям"
-        },
-        {
           "id": "02-roles-views-route",
           "kicker": "Маршрут занятия",
           "kind": "agenda",
@@ -6219,26 +6179,6 @@
           "kind": "title",
           "title": "Карта артефактов",
           "body": "Брифинг, реестр требований, глоссарий, концептуальная модель, макет и проектная спецификация как единая цепочка."
-        },
-        {
-          "id": "03-artifact-map-main-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Основная литература",
-          "readingGroup": "primary"
-        },
-        {
-          "id": "03-artifact-map-additional-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Дополнительная литература",
-          "readingGroup": "additional"
-        },
-        {
-          "id": "03-artifact-map-materials",
-          "kicker": "Папка третьего курса",
-          "kind": "materials",
-          "title": "Материалы к занятиям"
         },
         {
           "id": "03-artifact-map-route",
@@ -7423,26 +7363,6 @@
           "body": "Брифинг, интервью, документы, формы, отчёты, наблюдение и Excel как свидетельства реального процесса."
         },
         {
-          "id": "04-requirement-sources-main-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Основная литература",
-          "readingGroup": "primary"
-        },
-        {
-          "id": "04-requirement-sources-additional-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Дополнительная литература",
-          "readingGroup": "additional"
-        },
-        {
-          "id": "04-requirement-sources-materials",
-          "kicker": "Папка третьего курса",
-          "kind": "materials",
-          "title": "Материалы к занятиям"
-        },
-        {
           "id": "04-requirement-sources-route",
           "kicker": "Маршрут занятия",
           "kind": "agenda",
@@ -8584,26 +8504,6 @@
           "body": "Открытые, закрытые и уточняющие вопросы; работа с неопределённостью и фиксация договорённостей."
         },
         {
-          "id": "05-interview-technique-main-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Основная литература",
-          "readingGroup": "primary"
-        },
-        {
-          "id": "05-interview-technique-additional-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Дополнительная литература",
-          "readingGroup": "additional"
-        },
-        {
-          "id": "05-interview-technique-materials",
-          "kicker": "Папка третьего курса",
-          "kind": "materials",
-          "title": "Материалы к занятиям"
-        },
-        {
           "id": "05-interview-technique-route",
           "kicker": "Маршрут занятия",
           "kind": "agenda",
@@ -9702,26 +9602,6 @@
           "kind": "title",
           "title": "Классы требований",
           "body": "Почему разные типы требований требуют разных формулировок, владельцев и способов проверки."
-        },
-        {
-          "id": "06-requirement-classes-main-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Основная литература",
-          "readingGroup": "primary"
-        },
-        {
-          "id": "06-requirement-classes-additional-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Дополнительная литература",
-          "readingGroup": "additional"
-        },
-        {
-          "id": "06-requirement-classes-materials",
-          "kicker": "Папка третьего курса",
-          "kind": "materials",
-          "title": "Материалы к занятиям"
         },
         {
           "id": "06-requirement-classes-route",
@@ -10855,26 +10735,6 @@
           "body": "Как переписать «удобно», «быстро» и «и так далее» в конкретные проверяемые формулировки."
         },
         {
-          "id": "07-requirement-quality-main-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Основная литература",
-          "readingGroup": "primary"
-        },
-        {
-          "id": "07-requirement-quality-additional-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Дополнительная литература",
-          "readingGroup": "additional"
-        },
-        {
-          "id": "07-requirement-quality-materials",
-          "kicker": "Папка третьего курса",
-          "kind": "materials",
-          "title": "Материалы к занятиям"
-        },
-        {
           "id": "07-requirement-quality-route",
           "kicker": "Маршрут занятия",
           "kind": "agenda",
@@ -11998,26 +11858,6 @@
           "body": "Роль, цель, ценность и проверяемые критерии; когда история действительно готова к реализации."
         },
         {
-          "id": "08-user-story-acceptance-main-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Основная литература",
-          "readingGroup": "primary"
-        },
-        {
-          "id": "08-user-story-acceptance-additional-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Дополнительная литература",
-          "readingGroup": "additional"
-        },
-        {
-          "id": "08-user-story-acceptance-materials",
-          "kicker": "Папка третьего курса",
-          "kind": "materials",
-          "title": "Материалы к занятиям"
-        },
-        {
           "id": "08-user-story-acceptance-route",
           "kicker": "Маршрут занятия",
           "kind": "agenda",
@@ -13129,26 +12969,6 @@
           "kind": "title",
           "title": "Допущения и трассировка",
           "body": "Как управлять неизвестным и связывать требование с решением и способом проверки."
-        },
-        {
-          "id": "09-assumptions-traceability-main-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Основная литература",
-          "readingGroup": "primary"
-        },
-        {
-          "id": "09-assumptions-traceability-additional-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Дополнительная литература",
-          "readingGroup": "additional"
-        },
-        {
-          "id": "09-assumptions-traceability-materials",
-          "kicker": "Папка третьего курса",
-          "kind": "materials",
-          "title": "Материалы к занятиям"
         },
         {
           "id": "09-assumptions-traceability-route",
@@ -14304,26 +14124,6 @@
           "kind": "title",
           "title": "Сущности-кандидаты",
           "body": "Кандидаты, отсев, справочники, операции, события и скрытые сущности, без которых система не работает."
-        },
-        {
-          "id": "10-entity-candidates-main-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Основная литература",
-          "readingGroup": "primary"
-        },
-        {
-          "id": "10-entity-candidates-additional-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Дополнительная литература",
-          "readingGroup": "additional"
-        },
-        {
-          "id": "10-entity-candidates-materials",
-          "kicker": "Папка третьего курса",
-          "kind": "materials",
-          "title": "Материалы к занятиям"
         },
         {
           "id": "10-entity-candidates-route",
@@ -15501,26 +15301,6 @@
           "body": "Термины, определения, синонимы заказчика и запрещённые формулировки между отделами."
         },
         {
-          "id": "11-project-glossary-main-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Основная литература",
-          "readingGroup": "primary"
-        },
-        {
-          "id": "11-project-glossary-additional-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Дополнительная литература",
-          "readingGroup": "additional"
-        },
-        {
-          "id": "11-project-glossary-materials",
-          "kicker": "Папка третьего курса",
-          "kind": "materials",
-          "title": "Материалы к занятиям"
-        },
-        {
           "id": "11-project-glossary-route",
           "kicker": "Маршрут занятия",
           "kind": "agenda",
@@ -16631,26 +16411,6 @@
           "kind": "title",
           "title": "Бизнес-правила",
           "body": "Где правила спрятаны в документах и формах, чем они отличаются от структуры данных и как проверяются."
-        },
-        {
-          "id": "12-business-rules-main-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Основная литература",
-          "readingGroup": "primary"
-        },
-        {
-          "id": "12-business-rules-additional-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Дополнительная литература",
-          "readingGroup": "additional"
-        },
-        {
-          "id": "12-business-rules-materials",
-          "kicker": "Папка третьего курса",
-          "kind": "materials",
-          "title": "Материалы к занятиям"
         },
         {
           "id": "12-business-rules-route",
@@ -17766,26 +17526,6 @@
           "kind": "title",
           "title": "Атрибуты сущностей",
           "body": "Данные из документов, добавленные проектировщиком атрибуты, вычисляемые значения и решение «хранить или считать»."
-        },
-        {
-          "id": "13-attribute-composition-main-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Основная литература",
-          "readingGroup": "primary"
-        },
-        {
-          "id": "13-attribute-composition-additional-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Дополнительная литература",
-          "readingGroup": "additional"
-        },
-        {
-          "id": "13-attribute-composition-materials",
-          "kicker": "Папка третьего курса",
-          "kind": "materials",
-          "title": "Материалы к занятиям"
         },
         {
           "id": "13-attribute-composition-route",
@@ -18923,26 +18663,6 @@
           "kind": "title",
           "title": "Историчность данных",
           "body": "Цена, тариф, норма и состав меняются: как сохранить смысл прошлых документов и архивных записей."
-        },
-        {
-          "id": "14-data-history-main-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Основная литература",
-          "readingGroup": "primary"
-        },
-        {
-          "id": "14-data-history-additional-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Дополнительная литература",
-          "readingGroup": "additional"
-        },
-        {
-          "id": "14-data-history-materials",
-          "kicker": "Папка третьего курса",
-          "kind": "materials",
-          "title": "Материалы к занятиям"
         },
         {
           "id": "14-data-history-route",
@@ -20088,26 +19808,6 @@
           "kind": "title",
           "title": "Ревизия модели",
           "body": "Полнота, трассировка «требование — сущность — атрибут», непокрытые требования и лишние сущности."
-        },
-        {
-          "id": "15-model-revision-main-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Основная литература",
-          "readingGroup": "primary"
-        },
-        {
-          "id": "15-model-revision-additional-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Дополнительная литература",
-          "readingGroup": "additional"
-        },
-        {
-          "id": "15-model-revision-materials",
-          "kicker": "Папка третьего курса",
-          "kind": "materials",
-          "title": "Материалы к занятиям"
         },
         {
           "id": "15-model-revision-route",
@@ -21270,26 +20970,6 @@
           "body": "Критерии, веса, шкала, чувствительность и честное сравнение допустимых вариантов."
         },
         {
-          "id": "16-decision-matrix-main-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Основная литература",
-          "readingGroup": "primary"
-        },
-        {
-          "id": "16-decision-matrix-additional-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Дополнительная литература",
-          "readingGroup": "additional"
-        },
-        {
-          "id": "16-decision-matrix-materials",
-          "kicker": "Папка третьего курса",
-          "kind": "materials",
-          "title": "Материалы к занятиям"
-        },
-        {
           "id": "16-decision-matrix-route",
           "kicker": "Маршрут занятия",
           "kind": "agenda",
@@ -22413,26 +22093,6 @@
           "kind": "title",
           "title": "ADR",
           "body": "Контекст, рассмотренные варианты, решение, последствия и ценность сохранённых отвергнутых вариантов."
-        },
-        {
-          "id": "17-adr-main-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Основная литература",
-          "readingGroup": "primary"
-        },
-        {
-          "id": "17-adr-additional-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Дополнительная литература",
-          "readingGroup": "additional"
-        },
-        {
-          "id": "17-adr-materials",
-          "kicker": "Папка третьего курса",
-          "kind": "materials",
-          "title": "Материалы к занятиям"
         },
         {
           "id": "17-adr-route",
@@ -23562,26 +23222,6 @@
           "body": "Объём данных, конкуренция пользователей, режим работы и разграничение доступа как архитектурные силы."
         },
         {
-          "id": "18-nfr-impact-main-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Основная литература",
-          "readingGroup": "primary"
-        },
-        {
-          "id": "18-nfr-impact-additional-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Дополнительная литература",
-          "readingGroup": "additional"
-        },
-        {
-          "id": "18-nfr-impact-materials",
-          "kicker": "Папка третьего курса",
-          "kind": "materials",
-          "title": "Материалы к занятиям"
-        },
-        {
           "id": "18-nfr-impact-route",
           "kicker": "Маршрут занятия",
           "kind": "agenda",
@@ -24683,26 +24323,6 @@
           "kind": "title",
           "title": "Защита решения",
           "body": "Как объяснить сложный выбор нетехническому человеку и разобрать слабую защиту."
-        },
-        {
-          "id": "19-defense-main-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Основная литература",
-          "readingGroup": "primary"
-        },
-        {
-          "id": "19-defense-additional-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Дополнительная литература",
-          "readingGroup": "additional"
-        },
-        {
-          "id": "19-defense-materials",
-          "kicker": "Папка третьего курса",
-          "kind": "materials",
-          "title": "Материалы к занятиям"
         },
         {
           "id": "19-defense-route",
@@ -25833,26 +25453,6 @@
           "body": "Дизайн как понятная и безопасная работа, а не декоративное оформление."
         },
         {
-          "id": "20-ux-goals-main-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Основная литература",
-          "readingGroup": "primary"
-        },
-        {
-          "id": "20-ux-goals-additional-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Дополнительная литература",
-          "readingGroup": "additional"
-        },
-        {
-          "id": "20-ux-goals-materials",
-          "kicker": "Папка третьего курса",
-          "kind": "materials",
-          "title": "Материалы к занятиям"
-        },
-        {
           "id": "20-ux-goals-route",
           "kicker": "Маршрут занятия",
           "kind": "agenda",
@@ -26954,26 +26554,6 @@
           "kind": "title",
           "title": "Информационная архитектура",
           "body": "Структура разделов, группировка, приоритет, поиск и рабочее место под конкретную роль."
-        },
-        {
-          "id": "21-information-architecture-main-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Основная литература",
-          "readingGroup": "primary"
-        },
-        {
-          "id": "21-information-architecture-additional-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Дополнительная литература",
-          "readingGroup": "additional"
-        },
-        {
-          "id": "21-information-architecture-materials",
-          "kicker": "Папка третьего курса",
-          "kind": "materials",
-          "title": "Материалы к занятиям"
         },
         {
           "id": "21-information-architecture-route",
@@ -28112,26 +27692,6 @@
           "body": "Что показывать заказчику, что передавать разработчику и когда детализация мешает проверке."
         },
         {
-          "id": "22-wireframe-prototype-main-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Основная литература",
-          "readingGroup": "primary"
-        },
-        {
-          "id": "22-wireframe-prototype-additional-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Дополнительная литература",
-          "readingGroup": "additional"
-        },
-        {
-          "id": "22-wireframe-prototype-materials",
-          "kicker": "Папка третьего курса",
-          "kind": "materials",
-          "title": "Материалы к занятиям"
-        },
-        {
           "id": "22-wireframe-prototype-route",
           "kicker": "Маршрут занятия",
           "kind": "agenda",
@@ -29250,26 +28810,6 @@
           "body": "Обязательность, подсказки, тексты ошибок, пустое состояние, загрузка, ошибка и успех."
         },
         {
-          "id": "23-forms-validation-states-main-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Основная литература",
-          "readingGroup": "primary"
-        },
-        {
-          "id": "23-forms-validation-states-additional-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Дополнительная литература",
-          "readingGroup": "additional"
-        },
-        {
-          "id": "23-forms-validation-states-materials",
-          "kicker": "Папка третьего курса",
-          "kind": "materials",
-          "title": "Материалы к занятиям"
-        },
-        {
           "id": "23-forms-validation-states-route",
           "kicker": "Маршрут занятия",
           "kind": "agenda",
@@ -30376,26 +29916,6 @@
           "kind": "title",
           "title": "Дизайн-система",
           "body": "Сетка, типографика, компоненты, состояния, токены и доступность как единый контракт."
-        },
-        {
-          "id": "24-design-system-accessibility-main-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Основная литература",
-          "readingGroup": "primary"
-        },
-        {
-          "id": "24-design-system-accessibility-additional-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Дополнительная литература",
-          "readingGroup": "additional"
-        },
-        {
-          "id": "24-design-system-accessibility-materials",
-          "kicker": "Папка третьего курса",
-          "kind": "materials",
-          "title": "Материалы к занятиям"
         },
         {
           "id": "24-design-system-accessibility-route",
@@ -31536,26 +31056,6 @@
           "body": "Роли, права, объекты, операции и проверка того, что каждая роль видит и может изменить."
         },
         {
-          "id": "25-rbac-main-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Основная литература",
-          "readingGroup": "primary"
-        },
-        {
-          "id": "25-rbac-additional-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Дополнительная литература",
-          "readingGroup": "additional"
-        },
-        {
-          "id": "25-rbac-materials",
-          "kicker": "Папка третьего курса",
-          "kind": "materials",
-          "title": "Материалы к занятиям"
-        },
-        {
           "id": "25-rbac-route",
           "kicker": "Маршрут занятия",
           "kind": "agenda",
@@ -32654,26 +32154,6 @@
           "kind": "title",
           "title": "Аутентификация и блокировка",
           "body": "Неуспешные попытки, защита от перебора, рабочее место администратора и дополнительная проверка человека."
-        },
-        {
-          "id": "26-auth-lockout-main-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Основная литература",
-          "readingGroup": "primary"
-        },
-        {
-          "id": "26-auth-lockout-additional-literature",
-          "kicker": "Источники",
-          "kind": "literature",
-          "title": "Дополнительная литература",
-          "readingGroup": "additional"
-        },
-        {
-          "id": "26-auth-lockout-materials",
-          "kicker": "Папка третьего курса",
-          "kind": "materials",
-          "title": "Материалы к занятиям"
         },
         {
           "id": "26-auth-lockout-route",
