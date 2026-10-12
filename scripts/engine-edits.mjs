@@ -362,6 +362,22 @@ export const edits = [
     from: ['!n && N === "results" && K && /* @__PURE__ */ w(r, {'],
     to: ['N === "results" && K && /* @__PURE__ */ w(r, {'],
   },
+
+  // ── Самопроверка: результат на телефоне ─────────────────────────────────────
+  {
+    id: 'results-not-null-on-mobile',
+    note: 'На узком экране список результатов самопроверки не превращать в пустоту.',
+    file: 'SlideView-CKuVrZ7x.js',
+    from: ['if (n) return null;'],
+    to: [],
+  },
+  {
+    id: 'results-answers-on-mobile',
+    note: 'Показывать «Ответ и объяснение» по заданию и на телефоне.',
+    file: 'SlideView-CKuVrZ7x.js',
+    from: ['!n && a?.result && /* @__PURE__ */ f("details", { children: ['],
+    to: ['a?.result && /* @__PURE__ */ f("details", { children: ['],
+  },
 ]
 
 export const ENGINE_DIR = new URL('../node_modules/@olgakraven/lecture-engine/lib/', import.meta.url)
