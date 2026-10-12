@@ -143,6 +143,36 @@
   margin-top: 1rem;
 }
 
+.certificate-actions {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.certificate-actions .button {
+  margin-top: 0;
+}
+
+.certificate-reset {
+  display: grid;
+  flex: 1 1 16rem;
+  min-width: 14rem;
+}
+
+.certificate-reset .access-field {
+  margin-top: 0;
+}
+
+.certificate-reset .access-actions {
+  margin-top: 0.7rem;
+}
+
+.certificate-actions .access-done {
+  margin-top: 0;
+}
+
 @media (max-width: 560px) {
   .certificate-facts div {
     grid-template-columns: 1fr;

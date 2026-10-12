@@ -69,6 +69,10 @@ function prune(store) {
 
 function writeStore(store) {
   try {
+    if (!store || Object.keys(store).length === 0) {
+      localStorage.removeItem(accessKey())
+      return
+    }
     localStorage.setItem(accessKey(), JSON.stringify(store))
   } catch {
     /* приватный режим: доступ просто не запомнится */
@@ -113,6 +117,7 @@ export async function releaseAccess(access, code) {
   try {
     localStorage.removeItem(accessKey())
     localStorage.removeItem(identityKey())
+    localStorage.removeItem(`${identityKey()}:cert`)
   } catch {
     /* ничего */
   }
@@ -235,12 +240,25 @@ export function useLectureGate(lectureId) {
 
   useEffect(() => {
     let alive = true
-    loadAccessFile().then((access) => {
+    const sync = (access) => {
       if (!alive || !lectureId) return
       setState({ ready: true, locked: hashesFor(access, lectureId).length > 0 && !isLectureUnlocked(lectureId) })
-    })
+    }
+    loadAccessFile().then(sync)
+    // Мастер-код из панели результата или из гейта должен вернуть лекцию под код.
+    const refresh = () => loadAccessFile().then(sync)
+    try {
+      window.addEventListener('pidis3:access-changed', refresh)
+    } catch {
+      /* Node */
+    }
     return () => {
       alive = false
+      try {
+        window.removeEventListener('pidis3:access-changed', refresh)
+      } catch {
+        /* Node */
+      }
     }
   }, [lectureId])
 
@@ -347,6 +365,11 @@ export function CertificatePanel({ lectureId, score, total }) {
   const [certificate, setCertificate] = useState(null)
   const [error, setError] = useState('')
   const [busy, setBusy] = useState(false)
+  const [resetMode, setResetMode] = useState(false)
+  const [resetCode, setResetCode] = useState('')
+  const [resetError, setResetError] = useState('')
+  const [resetBusy, setResetBusy] = useState(false)
+  const [resetDone, setResetDone] = useState('')
 
   useEffect(() => {
     let alive = true
@@ -398,6 +421,57 @@ export function CertificatePanel({ lectureId, score, total }) {
     setTimeout(() => URL.revokeObjectURL(href), 5000)
   }
 
+  const submitReset = async (event) => {
+    event.preventDefault()
+    setResetBusy(true)
+    setResetError('')
+    try {
+      if (!(await releaseAccess(access, resetCode))) {
+        setResetError('Мастер-код не подходит.')
+        return
+      }
+      setResetMode(false)
+      setResetCode('')
+      setCertificate(null)
+      setName('')
+      setResetDone('Доступ сброшен. Новый студент может пройти лекцию на этом устройстве.')
+    } catch (e) {
+      setResetError(`Сброс не выполнен: ${String(e)}`)
+    } finally {
+      setResetBusy(false)
+    }
+  }
+
+  const resetControl = resetMode
+    ? h(
+        'form',
+        { className: 'certificate-reset', onSubmit: submitReset },
+        h(
+          'label',
+          { className: 'access-field' },
+          'Мастер-код',
+          h('input', {
+            value: resetCode,
+            autoComplete: 'off',
+            spellCheck: false,
+            autoFocus: true,
+            onChange: (event) => setResetCode(event.target.value),
+          }),
+        ),
+        resetError ? h('p', { className: 'access-error', role: 'alert' }, resetError) : null,
+        h(
+          'div',
+          { className: 'access-actions' },
+          h('button', { className: 'button primary', type: 'submit', disabled: resetBusy || !resetCode.trim() }, resetBusy ? 'Проверяем…' : 'Сбросить'),
+          h('button', { className: 'button ghost', type: 'button', onClick: () => { setResetMode(false); setResetCode(''); setResetError('') } }, 'Отмена'),
+        ),
+      )
+    : h(
+        'button',
+        { className: 'button ghost', type: 'button', onClick: () => { setResetMode(true); setResetDone('') } },
+        'Сбросить доступ',
+      )
+
   return h(
     'section',
     { className: 'certificate-panel' },
@@ -415,7 +489,12 @@ export function CertificatePanel({ lectureId, score, total }) {
             h('div', null, h('dt', null, 'Подпись'), h('dd', null, h('code', null, certificate.signature))),
             h('div', null, h('dt', null, 'Время'), h('dd', null, new Date(certificate.stamp).toLocaleString('ru-RU'))),
           ),
-          h('button', { className: 'button ghost', type: 'button', onClick: download }, 'Сохранить файл результата'),
+          h(
+            'div',
+            { className: 'certificate-actions' },
+            h('button', { className: 'button ghost', type: 'button', onClick: download }, 'Сохранить файл результата'),
+            resetControl,
+          ),
         )
       : h(
           Fragment,
@@ -433,6 +512,8 @@ export function CertificatePanel({ lectureId, score, total }) {
             error ? h('p', { className: 'access-error', role: 'alert' }, error) : null,
             h('button', { className: 'button primary', type: 'submit', disabled: busy || !name.trim() }, busy ? 'Подписываем…' : 'Подписать результат'),
           ),
+          h('div', { className: 'certificate-actions' }, resetControl),
         ),
+    resetDone ? h('p', { className: 'access-done', role: 'status' }, resetDone) : null,
   )
 }
