@@ -72,6 +72,7 @@ export const edits = [
     to: [
       'import { jsx as w, jsxs as T } from "react/jsx-runtime";',
       'import { useLectureGate as pidisUseLectureGate } from "./access-runtime.js";',
+      'import { LectureCardState as pidisLectureCardState } from "./access-runtime.js";',
     ],
   },
   {
@@ -164,8 +165,8 @@ export const edits = [
 
   // ── Каталог ───────────────────────────────────────────────────────────────
   {
-    id: 'catalog-card-no-pdf',
-    note: 'Убрать кнопку «Сохранить PDF» с карточки лекции.',
+    id: 'catalog-card-access-state',
+    note: 'Карточка лекции: убрать «Сохранить PDF»; закрыта — «Доступ по коду» и «Ввести код», разблокирована — «Доступно» и «Открыть».',
     file: 'lecture-engine.js',
     from: [
       'children: [/* @__PURE__ */ T("button", {',
@@ -179,10 +180,9 @@ export const edits = [
       '})]',
     ],
     to: [
-      'children: [/* @__PURE__ */ w("button", {',
-      'className: "button primary",',
-      'onClick: () => ke(t),',
-      'children: "Открыть"',
+      'children: [/* @__PURE__ */ w(pidisLectureCardState, {',
+      'lectureId: t.id,',
+      'onOpen: () => ke(t)',
       '})]',
     ],
   },
@@ -320,36 +320,6 @@ export const edits = [
       'Q(R ? "Отключить анимацию" : "Включить анимацию", w(R ? ee : ne, { size: 19 }), () => we(!R), R),',
       'Q("Повторить анимацию", /* @__PURE__ */ w(pe, { size: 19 }), () => Te(z + 1)),',
       'Q("Открыть содержание", /* @__PURE__ */ w(ue, { size: 19 }), () => {',
-    ],
-  },
-
-  // ── Карточки каталога: статус доступа по коду ──────────────────────────────
-  {
-    id: 'deck-card-access-import',
-    note: 'Импортировать компонент статуса доступа для карточек каталога.',
-    file: 'lecture-engine.js',
-    from: ['import { useLectureGate as pidisUseLectureGate } from "./access-runtime.js";'],
-    to: [
-      'import { useLectureGate as pidisUseLectureGate } from "./access-runtime.js";',
-      'import { LectureCardState as pidisLectureCardState } from "./access-runtime.js";',
-    ],
-  },
-  {
-    id: 'deck-card-access-state',
-    note: 'Карточка лекции: закрыта — «Доступ по коду» и «Ввести код», разблокирована — «Доступно» и «Открыть».',
-    file: 'lecture-engine.js',
-    from: [
-      'children: [/* @__PURE__ */ w("button", {',
-      'className: "button primary",',
-      'onClick: () => ke(t),',
-      'children: "Открыть"',
-      '})]',
-    ],
-    to: [
-      'children: [/* @__PURE__ */ w(pidisLectureCardState, {',
-      'lectureId: t.id,',
-      'onOpen: () => ke(t)',
-      '})]',
     ],
   },
 ]
