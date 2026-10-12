@@ -1,8 +1,8 @@
 {
   "version": "pisid3-2026.09.21-visuals-v3",
   "lectures": 26,
-  "slides": 1883,
-  "notes": 1883,
+  "slides": 1805,
+  "notes": 1805,
   "questions": 104,
   "tasks": 416,
   "duplicateScripts": [],
@@ -10,132 +10,132 @@
     {
       "id": "01-project-decisions",
       "title": "Что такое проектирование ИС и чем оно не является",
-      "minutes": 91
+      "minutes": 90
     },
     {
       "id": "02-roles-views",
       "title": "Роли и точки зрения на систему",
-      "minutes": 91
+      "minutes": 90
     },
     {
       "id": "03-artifact-map",
       "title": "Карта артефактов проекта и зависимости между ними",
-      "minutes": 91
+      "minutes": 90
     },
     {
       "id": "04-requirement-sources",
       "title": "Источники требований и чтение выгрузки заказчика",
-      "minutes": 90
+      "minutes": 89
     },
     {
       "id": "05-interview-technique",
       "title": "Техника интервью и протокол встречи",
-      "minutes": 90
+      "minutes": 89
     },
     {
       "id": "06-requirement-classes",
       "title": "Классификация требований: функции, качества, ограничения и правила",
-      "minutes": 90
+      "minutes": 89
     },
     {
       "id": "07-requirement-quality",
       "title": "Атомарность, проверяемость и недвусмысленность требования",
-      "minutes": 90
+      "minutes": 89
     },
     {
       "id": "08-user-story-acceptance",
       "title": "User story и критерии приёмки",
-      "minutes": 90
+      "minutes": 89
     },
     {
       "id": "09-assumptions-traceability",
       "title": "Допущения, открытые вопросы и трассируемость",
-      "minutes": 90
+      "minutes": 89
     },
     {
       "id": "10-entity-candidates",
       "title": "От документов заказчика к перечню сущностей",
-      "minutes": 91
+      "minutes": 90
     },
     {
       "id": "11-project-glossary",
       "title": "Глоссарий проекта и цена разночтений",
-      "minutes": 91
+      "minutes": 90
     },
     {
       "id": "12-business-rules",
       "title": "Бизнес-правила предметной области",
-      "minutes": 91
+      "minutes": 90
     },
     {
       "id": "13-attribute-composition",
       "title": "Атрибутный состав сущности",
-      "minutes": 91
+      "minutes": 90
     },
     {
       "id": "14-data-history",
       "title": "Историчность данных и изменяемые значения",
-      "minutes": 91
+      "minutes": 90
     },
     {
       "id": "15-model-revision",
       "title": "Ревизия модели по документам заказчика",
-      "minutes": 91
+      "minutes": 90
     },
     {
       "id": "16-decision-matrix",
       "title": "Варианты решения и взвешенная матрица выбора",
-      "minutes": 90
+      "minutes": 89
     },
     {
       "id": "17-adr",
       "title": "Запись проектного решения ADR",
-      "minutes": 90
+      "minutes": 89
     },
     {
       "id": "18-nfr-impact",
       "title": "Как нефункциональные требования меняют решение",
-      "minutes": 90
+      "minutes": 89
     },
     {
       "id": "19-defense",
       "title": "Защита проектного решения перед заказчиком",
-      "minutes": 90
+      "minutes": 89
     },
     {
       "id": "20-ux-goals",
       "title": "Дизайн ИС: цели, задачи, сценарии и цена ошибки",
-      "minutes": 90
+      "minutes": 89
     },
     {
       "id": "21-information-architecture",
       "title": "Информационная архитектура и навигация",
-      "minutes": 90
+      "minutes": 89
     },
     {
       "id": "22-wireframe-prototype",
       "title": "Wireframe и прототип: уровни детализации",
-      "minutes": 90
+      "minutes": 89
     },
     {
       "id": "23-forms-validation-states",
       "title": "Формы, валидация, сообщения и состояния экрана",
-      "minutes": 90
+      "minutes": 89
     },
     {
       "id": "24-design-system-accessibility",
       "title": "Дизайн-система проекта и основы доступности",
-      "minutes": 90
+      "minutes": 89
     },
     {
       "id": "25-rbac",
       "title": "Ролевая модель и матрица прав доступа",
-      "minutes": 91
+      "minutes": 90
     },
     {
       "id": "26-auth-lockout",
       "title": "Сценарий входа, блокировка и разблокировка",
-      "minutes": 91
+      "minutes": 90
     }
   ],
   "scope": "Структура, покрытие заметками, порядок объяснений, полные повторы сценариев, варианты и формат ответов. Смысловую экспертизу автоматическая проверка не заменяет."

@@ -4,283 +4,295 @@
     "title": "Что такое проектирование ИС и чем оно не является",
     "semester": 5,
     "hours": null,
-    "slides": 73,
+    "slides": 70,
     "questions": 4,
     "tasks": 16,
     "visuals": 12,
     "contentVersion": "pisid3-2026.09.21-visuals-v3",
-    "estimatedMinutes": 91
+    "estimatedMinutes": 90
   },
   {
     "lectureId": "02-roles-views",
     "title": "Роли и точки зрения на систему",
     "semester": 5,
     "hours": null,
-    "slides": 73,
+    "slides": 70,
     "questions": 4,
     "tasks": 16,
     "visuals": 12,
     "contentVersion": "pisid3-2026.09.21-visuals-v3",
-    "estimatedMinutes": 91
+    "estimatedMinutes": 90
   },
   {
     "lectureId": "03-artifact-map",
     "title": "Карта артефактов проекта и зависимости между ними",
     "semester": 5,
     "hours": null,
-    "slides": 73,
+    "slides": 70,
     "questions": 4,
     "tasks": 16,
     "visuals": 12,
     "contentVersion": "pisid3-2026.09.21-visuals-v3",
-    "estimatedMinutes": 91
+    "estimatedMinutes": 90
   },
   {
     "lectureId": "04-requirement-sources",
     "title": "Источники требований и чтение выгрузки заказчика",
     "semester": 5,
     "hours": null,
-    "slides": 72,
+    "slides": 69,
     "questions": 4,
     "tasks": 16,
     "visuals": 12,
     "contentVersion": "pisid3-2026.09.21-visuals-v3",
-    "estimatedMinutes": 90
+    "estimatedMinutes": 89
   },
   {
     "lectureId": "05-interview-technique",
     "title": "Техника интервью и протокол встречи",
     "semester": 5,
     "hours": null,
-    "slides": 72,
+    "slides": 69,
     "questions": 4,
     "tasks": 16,
     "visuals": 12,
     "contentVersion": "pisid3-2026.09.21-visuals-v3",
-    "estimatedMinutes": 90
+    "estimatedMinutes": 89
   },
   {
     "lectureId": "06-requirement-classes",
     "title": "Классификация требований: функции, качества, ограничения и правила",
     "semester": 5,
     "hours": null,
-    "slides": 72,
+    "slides": 69,
     "questions": 4,
     "tasks": 16,
     "visuals": 12,
     "contentVersion": "pisid3-2026.09.21-visuals-v3",
-    "estimatedMinutes": 90
+    "estimatedMinutes": 89
   },
   {
     "lectureId": "07-requirement-quality",
     "title": "Атомарность, проверяемость и недвусмысленность требования",
     "semester": 5,
     "hours": null,
-    "slides": 72,
+    "slides": 69,
     "questions": 4,
     "tasks": 16,
     "visuals": 12,
     "contentVersion": "pisid3-2026.09.21-visuals-v3",
-    "estimatedMinutes": 90
+    "estimatedMinutes": 89
   },
   {
     "lectureId": "08-user-story-acceptance",
     "title": "User story и критерии приёмки",
     "semester": 5,
     "hours": null,
-    "slides": 72,
+    "slides": 69,
     "questions": 4,
     "tasks": 16,
     "visuals": 12,
     "contentVersion": "pisid3-2026.09.21-visuals-v3",
-    "estimatedMinutes": 90
+    "estimatedMinutes": 89
   },
   {
     "lectureId": "09-assumptions-traceability",
     "title": "Допущения, открытые вопросы и трассируемость",
     "semester": 5,
     "hours": null,
-    "slides": 72,
+    "slides": 69,
     "questions": 4,
     "tasks": 16,
     "visuals": 12,
     "contentVersion": "pisid3-2026.09.21-visuals-v3",
-    "estimatedMinutes": 90
+    "estimatedMinutes": 89
   },
   {
     "lectureId": "10-entity-candidates",
     "title": "От документов заказчика к перечню сущностей",
     "semester": 5,
     "hours": null,
-    "slides": 73,
+    "slides": 70,
     "questions": 4,
     "tasks": 16,
     "visuals": 12,
     "contentVersion": "pisid3-2026.09.21-visuals-v3",
-    "estimatedMinutes": 91
+    "estimatedMinutes": 90
   },
   {
     "lectureId": "11-project-glossary",
     "title": "Глоссарий проекта и цена разночтений",
     "semester": 5,
     "hours": null,
-    "slides": 73,
+    "slides": 70,
     "questions": 4,
     "tasks": 16,
     "visuals": 12,
     "contentVersion": "pisid3-2026.09.21-visuals-v3",
-    "estimatedMinutes": 91
+    "estimatedMinutes": 90
   },
   {
     "lectureId": "12-business-rules",
     "title": "Бизнес-правила предметной области",
     "semester": 5,
     "hours": null,
-    "slides": 73,
+    "slides": 70,
     "questions": 4,
     "tasks": 16,
     "visuals": 12,
     "contentVersion": "pisid3-2026.09.21-visuals-v3",
-    "estimatedMinutes": 91
+    "estimatedMinutes": 90
   },
   {
     "lectureId": "13-attribute-composition",
     "title": "Атрибутный состав сущности",
     "semester": 5,
     "hours": null,
-    "slides": 73,
+    "slides": 70,
     "questions": 4,
     "tasks": 16,
     "visuals": 12,
     "contentVersion": "pisid3-2026.09.21-visuals-v3",
-    "estimatedMinutes": 91
+    "estimatedMinutes": 90
   },
   {
     "lectureId": "14-data-history",
     "title": "Историчность данных и изменяемые значения",
     "semester": 5,
     "hours": null,
-    "slides": 73,
+    "slides": 70,
     "questions": 4,
     "tasks": 16,
     "visuals": 12,
     "contentVersion": "pisid3-2026.09.21-visuals-v3",
-    "estimatedMinutes": 91
+    "estimatedMinutes": 90
   },
   {
     "lectureId": "15-model-revision",
     "title": "Ревизия модели по документам заказчика",
     "semester": 5,
     "hours": null,
-    "slides": 73,
+    "slides": 70,
     "questions": 4,
     "tasks": 16,
     "visuals": 12,
     "contentVersion": "pisid3-2026.09.21-visuals-v3",
-    "estimatedMinutes": 91
+    "estimatedMinutes": 90
   },
   {
     "lectureId": "16-decision-matrix",
     "title": "Варианты решения и взвешенная матрица выбора",
     "semester": 5,
     "hours": null,
-    "slides": 72,
+    "slides": 69,
     "questions": 4,
     "tasks": 16,
     "visuals": 12,
     "contentVersion": "pisid3-2026.09.21-visuals-v3",
-    "estimatedMinutes": 90
+    "estimatedMinutes": 89
   },
   {
     "lectureId": "17-adr",
     "title": "Запись проектного решения ADR",
     "semester": 5,
     "hours": null,
-    "slides": 72,
+    "slides": 69,
     "questions": 4,
     "tasks": 16,
     "visuals": 12,
     "contentVersion": "pisid3-2026.09.21-visuals-v3",
-    "estimatedMinutes": 90
+    "estimatedMinutes": 89
   },
   {
     "lectureId": "18-nfr-impact",
     "title": "Как нефункциональные требования меняют решение",
     "semester": 5,
     "hours": null,
-    "slides": 72,
+    "slides": 69,
     "questions": 4,
     "tasks": 16,
     "visuals": 12,
     "contentVersion": "pisid3-2026.09.21-visuals-v3",
-    "estimatedMinutes": 90
+    "estimatedMinutes": 89
   },
   {
     "lectureId": "19-defense",
     "title": "Защита проектного решения перед заказчиком",
     "semester": 5,
     "hours": null,
-    "slides": 72,
+    "slides": 69,
     "questions": 4,
     "tasks": 16,
     "visuals": 12,
     "contentVersion": "pisid3-2026.09.21-visuals-v3",
-    "estimatedMinutes": 90
+    "estimatedMinutes": 89
   },
   {
     "lectureId": "20-ux-goals",
     "title": "Дизайн ИС: цели, задачи, сценарии и цена ошибки",
     "semester": 6,
     "hours": null,
-    "slides": 72,
+    "slides": 69,
     "questions": 4,
     "tasks": 16,
     "visuals": 12,
     "contentVersion": "pisid3-2026.09.21-visuals-v3",
-    "estimatedMinutes": 90
+    "estimatedMinutes": 89
   },
   {
     "lectureId": "21-information-architecture",
     "title": "Информационная архитектура и навигация",
     "semester": 6,
     "hours": null,
-    "slides": 72,
+    "slides": 69,
     "questions": 4,
     "tasks": 16,
     "visuals": 12,
     "contentVersion": "pisid3-2026.09.21-visuals-v3",
-    "estimatedMinutes": 90
+    "estimatedMinutes": 89
   },
   {
     "lectureId": "22-wireframe-prototype",
     "title": "Wireframe и прототип: уровни детализации",
     "semester": 6,
     "hours": null,
-    "slides": 72,
+    "slides": 69,
     "questions": 4,
     "tasks": 16,
     "visuals": 12,
     "contentVersion": "pisid3-2026.09.21-visuals-v3",
-    "estimatedMinutes": 90
+    "estimatedMinutes": 89
   },
   {
     "lectureId": "23-forms-validation-states",
     "title": "Формы, валидация, сообщения и состояния экрана",
     "semester": 6,
     "hours": null,
-    "slides": 72,
+    "slides": 69,
     "questions": 4,
     "tasks": 16,
     "visuals": 12,
     "contentVersion": "pisid3-2026.09.21-visuals-v3",
-    "estimatedMinutes": 90
+    "estimatedMinutes": 89
   },
   {
     "lectureId": "24-design-system-accessibility",
     "title": "Дизайн-система проекта и основы доступности",
     "semester": 6,
     "hours": null,
-    "slides": 72,
+    "slides": 69,
+    "questions": 4,
+    "tasks": 16,
+    "visuals": 12,
+    "contentVersion": "pisid3-2026.09.21-visuals-v3",
+    "estimatedMinutes": 89
+  },
+  {
+    "lectureId": "25-rbac",
+    "title": "Ролевая модель и матрица прав доступа",
+    "semester": 6,
+    "hours": null,
+    "slides": 70,
     "questions": 4,
     "tasks": 16,
     "visuals": 12,
@@ -288,27 +300,15 @@
     "estimatedMinutes": 90
   },
   {
-    "lectureId": "25-rbac",
-    "title": "Ролевая модель и матрица прав доступа",
-    "semester": 6,
-    "hours": null,
-    "slides": 73,
-    "questions": 4,
-    "tasks": 16,
-    "visuals": 12,
-    "contentVersion": "pisid3-2026.09.21-visuals-v3",
-    "estimatedMinutes": 91
-  },
-  {
     "lectureId": "26-auth-lockout",
     "title": "Сценарий входа, блокировка и разблокировка",
     "semester": 6,
     "hours": null,
-    "slides": 73,
+    "slides": 70,
     "questions": 4,
     "tasks": 16,
     "visuals": 12,
     "contentVersion": "pisid3-2026.09.21-visuals-v3",
-    "estimatedMinutes": 91
+    "estimatedMinutes": 90
   }
 ]

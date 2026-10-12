@@ -20,7 +20,10 @@ const examUrl='https://disk.yandex.ru/d/Pn1NcJ-UexwpjQ';
 const examContext=n=>n<=3?'КИМ 09.02.07-5-2027, задание 1: анализ документов производственного предприятия и ER-диаграмма в PDF. WMS здесь — отдельный учебный кейс; часы и темы курса не выводятся из 20 минут экзаменационного задания.':n>=10&&n<=15?'КИМ 2027, задание 1 требует 3НФ, ссылочную целостность, осмысленное именование, первичные и внешние ключи; типы данных на этапе ER-диаграммы необязательны. Эта лекция разбирает отдельную часть подготовки модели.':n>=25?'В ТЗ задания 4 КИМ 2027 заданы роли администратора и пользователя, CAPTCHA-пазл и блокировка после трёх подряд неудач пароля или пазла. Условия экзамена реализуют по ТЗ; альтернативы WMS в этой лекции не отменяют их.':null;
 for(const [li,t] of original.topics.entries()){
  const l={id:t.id,title:t.title,sourceTitle:t.section,semester:t.semester,question:t.shortTitle,slides:[]};
+ // Вводные слайды (основная и дополнительная литература, материалы) не выводятся по требованию заказчика.
+ const introSlides=new Set(['main-literature','additional-literature','materials']);
  const add=(suffix,slide,comment={})=>{
+  if(introSlides.has(suffix))return t.id+'-'+suffix;
   const s=cleanText({id:t.id+'-'+suffix,kicker:'ПиДИС · 3 курс',...slide});l.slides.push(s);
   if(withTeacher){
    let note=comment.note||{script:comment.script,preparation:comment.preparation||'Учебный пример WMS; значения условные. '+t.caseContext,notebook:s.notebook||'Отдельная запись не требуется.',questions:comment.questions||'',answer:comment.answer||'',estimatedSeconds:comment.seconds||75};
