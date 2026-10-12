@@ -322,6 +322,26 @@ export const edits = [
       'Q("Открыть содержание", /* @__PURE__ */ w(ue, { size: 19 }), () => {',
     ],
   },
+  {
+    id: 'deck-toolbar-no-guide-pointer',
+    note: 'Сверху справа в лекции убрать кнопки «Как пользоваться сайтом» и «Указка».',
+    file: 'lecture-engine.js',
+    from: [
+      '/* @__PURE__ */ w("a", {',
+      'className: "icon-button",',
+      'href: u("guide.html", t),',
+      'target: "_blank",',
+      'rel: "noopener noreferrer",',
+      'title: "Как пользоваться сайтом",',
+      '"aria-label": "Как пользоваться сайтом",',
+      'children: /* @__PURE__ */ w(D, { size: 19 })',
+      '}),',
+      'Q("Указка", /* @__PURE__ */ w(ie, { size: 19 }), () => {',
+      'Ee(!B), H(null);',
+      '}, B),',
+    ],
+    to: [],
+  },
 ]
 
 export const ENGINE_DIR = new URL('../node_modules/@olgakraven/lecture-engine/lib/', import.meta.url)
