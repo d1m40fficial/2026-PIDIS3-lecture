@@ -30,7 +30,9 @@ jobs:
       - run: npm run check:readiness -- --strict --teacher=public/teacher-pack.json
       - run: npm run build:pages
         env:
-          BASE_PATH: /2026-PISID3-lecture/
+          # Путь берём из имени репозитория: иначе переименование репозитория
+          # снова даст белый экран, потому что ассеты уедут не туда.
+          BASE_PATH: /${{ github.event.repository.name }}/
       - run: npm run check:privacy
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
